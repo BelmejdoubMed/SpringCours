@@ -25,7 +25,7 @@ public class EtudiantService {
 	public Optional<Etudiant> getEtudiantById(String code){
 		return etudiantRepository.findById(code);
 	}
-
+  
 	public Etudiant createEtudiant(Etudiant etudiant) {
 		return etudiantRepository.save(etudiant);
 	}
